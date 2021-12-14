@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context=".ResumeActivity">
+
+    // 사진
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/person"/>
+    // 이름
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/face"
+        android:hint="이름"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanumsquareacb"
+        android:textSize="20dp"/>
+    // 생년월일
+    <EditText
+        android:id="@+id/birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/face"
+        android:layout_below="@id/name"
+        android:hint="생년월일(나이) ex)2021.12.31(20살)"
+        android:fontFamily="@font/nanumsquareacb"
+        android:textSize="12dp"/>
+    // 전화번호
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/face"
+        android:layout_below="@id/birth"
+        android:hint="전화번호 ex)010-1234-5678"
+        android:fontFamily="@font/nanumsquareacb"
+        android:textSize="12dp"/>
+    // 학력사항
+    <TextView
+        android:id="@+id/eduText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/face"
+        android:layout_marginTop="7dp"
+        android:text="학력사항"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanumsquareacb"
+        android:textSize="15dp"/>
+    <EditText
+        android:id="@+id/eduEdit"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/eduText"/>
+    // 경력사항
+    <TextView
+        android:id="@+id/careerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/eduEdit"
+        android:text="경력사항"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanumsquareacb"
+        android:textSize="15dp"/>
+    <EditText
+        android:id="@+id/careerEdit"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:fontFamily="@font/nanumsquareacb"
+        android:layout_below="@id/careerText"/>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="fill_horizontal"
+    android:padding="8dp"
+    tools:context=".JobsActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/employee"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:id="@+id/seeAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setsubback"
+        android:onClick="onClick"
+        android:text="한 눈에 보기"
+        android:drawableLeft="@drawable/icon_company"
+        android:padding="20dp"
+        android:textColor="@color/btn_select"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/seeDuty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/setsubback"
+        android:textColor="@color/btn_select"
+        android:drawableLeft="@drawable/icon_duty"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:text="직무별"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/seeIndustry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/setsubback"
+        android:textColor="@color/btn_select"
+        android:drawableLeft="@drawable/icon_industry"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="산업별"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+</LinearLayout>

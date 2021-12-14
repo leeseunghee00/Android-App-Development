@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="8dp"
+    tools:context=".GuideActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/interview"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:id="@+id/site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:text="취업 사이트 바로가기"
+        android:background="#ff0a54"
+        android:textColor="@color/btn_select"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:onClick="onClick"/>
+
+    <TableLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/image"
+        android:layout_above="@id/site"
+        android:gravity="bottom|center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <TableRow android:layout_weight="1">
+            <Button
+                android:id="@+id/trend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="2021 채용트렌드"
+                android:layout_weight="1"
+                android:background="@drawable/setsubback"
+                android:drawableTop="@drawable/icon_company"
+                android:padding="20dp"
+                android:textColor="@color/btn_select"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:onClick="onClick"/>
+            <Button
+                android:id="@+id/interview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="면접 전략"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/setsubback"
+                android:drawableTop="@drawable/icon_interview"
+                android:padding="20dp"
+                android:textColor="@color/btn_select"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:onClick="onClick"/>
+        </TableRow>
+        <TableRow android:layout_weight="1">
+            <Button
+                android:id="@+id/schedule"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="공채일정 달력"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/setsubback"
+                android:drawableTop="@drawable/icon_calendar"
+                android:padding="20dp"
+                android:textColor="@color/btn_select"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/resume"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="이력서 작성"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/setsubback"
+                android:drawableTop="@drawable/icon_resume"
+                android:padding="20dp"
+                android:textColor="@color/btn_select"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:onClick="onClick"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.company.termproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TermProject">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CompanyActivity"
+            android:label="CompanyActivity">
+        </activity>
+        <activity
+            android:name=".JobsActivity"
+            android:label="JobsActivity">
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:label="GuideActivity">
+        </activity>
+        <activity
+            android:name=".TrendActivity"
+            android:label="TrendActivity">
+        </activity>
+        <activity
+            android:name=".InterviewActivity"
+            android:label="InterviewActivity">
+        </activity>
+        <activity
+            android:name=".ResumeActivity"
+            android:label="ResumeActivity">
+        </activity>
+    </application>
+
+</manifest>
